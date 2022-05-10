@@ -4,6 +4,7 @@ class BotHandlerMixin:
     BOT_URL = 'https://api.telegram.org/bot5320205666:AAEu_vaIDrPUVjoIDFmq8LsMs9uGlCqQ9AE/' # <--- add your telegram token here; it should be like https://api.telegram.org/bot12345678:SOMErAn2dom/
     def get_chat_id(self, data):
         """
+        
         Method to extract chat id from telegram request.
         """
         chat_id = data['message']['chat']['id']
